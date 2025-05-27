@@ -2529,7 +2529,7 @@ input, select, textarea {
 		.button.primary {
 			box-shadow: none;
 			background-color: #585858;
-			color: #ffffff !important;
+			color: #b8d6e7 !important;
 		}
 
 			input[type="submit"].primary:hover,
