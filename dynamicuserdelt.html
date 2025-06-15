@@ -40,12 +40,12 @@
 							<p>I needed to remove a<strong> User Administrator</strong> who was responsible for managing a dynamic security group. At first, I thought it would be a simple task—but I quickly realized that Azure doesn’t allow a<strong> dynamic group</strong> to exist without at least one assigned owner.</p>
 							<p>In this post, I’ll walk you through what happened and how I resolved the issue, so you can avoid the same mistake and handle it more efficiently when it happens to you.</p>
 							<span class="image main"><img src="images/dynamicuserdelt/dynm3.jpeg" alt="" /></span>
-							<p>Go to your dynamic security group > manage > owners on your left side. In this example we just have one assigned person who is in charged of the asigned security group. Which is Nick Dilan. Select your user and click remove. </p>
+							<p>Go to your<strong> dynamic security group > manage > owners </strong> on your left side. In this example we just have one assigned person who is in charged of the asigned security group. Which is Nick Dilan. Select your user and click remove. </p>
 							<span class="image main"><img src="images/dynamicuserdelt/dynm4.jpeg" alt="" /></span>
 							<p><strong>You will get a fail error  which says:</strong></p>
 							<p><strong>"Failed to remove group owner."</strong></p>
 							<p>This happens because a<strong> dynamic security group</strong> must always have at least one assigned owner—someone responsible for managing it. That’s why Azure didn’t allow you to remove Nick Dilan as the group owner.</p>
-							<p>To resolve this, you’ll need to add another user and assign them as<strong>an owner</strong> first. Once the new owner is in place, you can safely remove the original one.</p>
+							<p>To resolve this, you’ll need to add another user and assign them as <strong>an owner</strong> first. Once the new owner is in place, you can safely remove the original one.</p>
 							<span class="image main"><img src="images/dynamicuserdelt/dynm5.jpeg" alt="" /></span>
 							<span class="image main"><img src="images/dynamicuserdelt/dynm6.jpeg" alt="" /></span>
 							<span class="image main"><img src="images/dynamicuserdelt/dynm7.jpeg" alt="" /></span>
